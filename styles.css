@@ -7,6 +7,7 @@ body {
 }
 
 
+/* Navbar general */
 .navbar {
   width: 100%;
   padding: 20px 40px;
@@ -14,18 +15,34 @@ body {
   position: relative;
 }
 
+.navbar {
+  width: 100%;
+  padding: 20px 40px;
+  background: #f4f9fd;
+  position: relative; /* importante para que el menú se posicione dentro */
+}
+
+/* Logo */
 .logo {
   display: inline-block;
+  vertical-align: middle;
   font-weight: bold;
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: #1a73e8;
 }
 
+.logo img {
+  height: 40px;
+  width: auto;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+/* Menú */
 .menu {
-  display: inline-block;
-  position: absolute;
-  right: 40px;
-  top: 20px;
+  position: absolute;  /* 📌 mueve el menú dentro del header */
+  right: 100px;         /* lo alinea a la derecha */
+  top: 25px;           /* ajusta altura para centrar con el logo */
 }
 
 .menu a {
@@ -41,6 +58,7 @@ body {
   padding: 8px 16px;
   border-radius: 6px;
 }
+
 
 .hero {
   padding: 80px 60px;
